@@ -30,7 +30,6 @@ public class MainActivity extends Activity {
 			return Math.ceil(x * 100)/100;
 	}
 	
-	@SuppressWarnings("deprecation")
 	private double getRandomNumber () throws Exception {
 		double ran;
 		int max, min;
@@ -44,7 +43,7 @@ public class MainActivity extends Activity {
 			AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 			alertDialog.setTitle(getString(R.string.dialog_title));
 			alertDialog.setMessage(getString(R.string.dialog_message));
-			alertDialog.setButton(getString(android.R.string.ok), new DialogInterface.OnClickListener() {
+			alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
 			   public void onClick(DialogInterface dialog, int which) {
 				   // here you can add functions
 			   }
@@ -122,12 +121,11 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	private void showProgramInfo() {
 		AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 		alertDialog.setTitle(getString(R.string.about_title));
 		alertDialog.setMessage(getString(R.string.copyright));
-		alertDialog.setButton(getString(android.R.string.ok), new DialogInterface.OnClickListener() {
+		alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
 		   public void onClick(DialogInterface dialog, int which) {
 			   // here you can add functions
 		   }
