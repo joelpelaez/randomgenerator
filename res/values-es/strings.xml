@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="minimum_number">Valor Minimo:</string><string name="quantity">Cantidad a Generar:</string><string name="app_name">Generador de Números Aleatorios</string><string name="menu_settings">Configuraciones</string><string name="title_activity_main">Generador de Números Aleatorios</string><string name="message">Ingrese un rango de dos números para el generador de números aleatorios.</string><string name="maxium_number">Valor Máximo:</string><string name="generate">Generar</string><string name="decimal_enable">Permitir números decimales</string><string name="dialog_title">Rango Numerico Erroneo</string><string name="dialog_message">El valor máximo es menor que el minimo.</string>
+
+    <string name="minimum_number">Valor Minimo:</string>
+    <string name="quantity">Cantidad a Generar:</string>
+    <string name="app_name">Generador de Números Aleatorios</string>
+    <string name="menu_settings">Configuraciones</string>
+    <string name="title_activity_main">Generador de Números Aleatorios</string>
+    <string name="message">Ingrese un rango de dos números para el generador de números aleatorios.</string>
+    <string name="maxium_number">Valor Máximo:</string>
+    <string name="generate">Generar</string>
+    <string name="decimal_enable">Permitir números decimales</string>
+    <string name="dialog_title">Rango Numerico Erroneo</string>
+    <string name="dialog_message">El valor máximo es menor que el minimo.</string>
     <string name="random_number">Número Aleatoreo:</string>
     <string name="random_numbers">Números Aleatorios:</string>
     <string name="menu_about">Acerca de</string>
-    
+    <string name="number_error_title">Error Númerico</string>
+    <string name="number_error_message">Introduzca un número.</string>
+
 </resources>

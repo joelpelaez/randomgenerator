@@ -1,105 +1,111 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/message"
-        tools:context=".MainActivity" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/TextView01"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/minimum_number"
-        tools:context=".MainActivity" />
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/message"
+            tools:context=".MainActivity" />
 
-    <EditText
-        android:id="@+id/minimum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView1"
-        android:layout_toRightOf="@+id/textView1"
-        android:inputType="number" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/minimum_number"
+            tools:context=".MainActivity" />
 
-        <requestFocus />
-    </EditText>
+        <EditText
+            android:id="@+id/minimum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:inputType="number" >
 
-    <TextView
-        android:id="@+id/TextView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/minimum"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/maxium_number"
-        tools:context=".MainActivity" />
+            <requestFocus />
+        </EditText>
 
-    <EditText
-        android:id="@+id/maxium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/TextView02"
-        android:layout_toRightOf="@+id/TextView02"
-        android:inputType="number" />
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/minimum"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/maxium_number"
+            tools:context=".MainActivity" />
 
-    <EditText
-        android:id="@+id/quantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/maxium"
-        android:layout_toRightOf="@+id/textView2"
-        android:inputType="number" />
+        <EditText
+            android:id="@+id/maxium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/TextView02"
+            android:layout_toRightOf="@+id/TextView02"
+            android:inputType="number" />
 
-    <Button
-        android:id="@+id/generate"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/quantity"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/generate" />
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/maxium"
+            android:layout_toRightOf="@+id/textView2"
+            android:inputType="number" />
 
-    <CheckBox
-        android:id="@+id/decimal_enable"
-        style="@style/checkBoxStyleMedium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/generate"
-        android:layout_alignBottom="@+id/generate"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/generate"
-        android:text="@string/decimal_enable" />
+        <Button
+            android:id="@+id/generate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/quantity"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/generate" />
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/generate"
-        android:padding="@dimen/padding_medium"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/decimal_enable"
+            style="@style/checkBoxStyleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/generate"
+            android:layout_alignBottom="@+id/generate"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/generate"
+            android:text="@string/decimal_enable" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/quantity"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/quantity" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/generate"
+            android:padding="@dimen/padding_medium"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/quantity"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/quantity" />
+    </RelativeLayout>
+
+</ScrollView>
