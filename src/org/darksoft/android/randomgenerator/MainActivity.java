@@ -29,13 +29,8 @@ public class MainActivity extends Activity {
 		else
 			return Math.ceil(x * 100) / 100;
 	}
-<<<<<<< HEAD
 
 	private double getRandomNumber() throws Exception {
-=======
-	
-	private double getRandomNumber () throws Exception {
->>>>>>> origin/develop
 		double ran;
 		int max, min;
 		try {
@@ -49,7 +44,6 @@ public class MainActivity extends Activity {
 			AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 			alertDialog.setTitle(getString(R.string.dialog_title));
 			alertDialog.setMessage(getString(R.string.dialog_message));
-<<<<<<< HEAD
 			alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL,
 					getString(android.R.string.ok),
 					new DialogInterface.OnClickListener() {
@@ -57,15 +51,7 @@ public class MainActivity extends Activity {
 							// here you can add functions
 						}
 					});
-			alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
-=======
-			alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
-			   public void onClick(DialogInterface dialog, int which) {
-				   // here you can add functions
-			   }
-			});
 			alertDialog.setIcon(R.drawable.ic_launcher);
->>>>>>> origin/develop
 			alertDialog.show();
 			throw new Exception("Value Error");
 		}
@@ -156,7 +142,6 @@ public class MainActivity extends Activity {
 		AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 		alertDialog.setTitle(getString(R.string.about_title));
 		alertDialog.setMessage(getString(R.string.copyright));
-<<<<<<< HEAD
 		alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL,
 				getString(android.R.string.ok),
 				new DialogInterface.OnClickListener() {
@@ -164,13 +149,6 @@ public class MainActivity extends Activity {
 						// here you can add functions
 					}
 				});
-=======
-		alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
-		   public void onClick(DialogInterface dialog, int which) {
-			   // here you can add functions
-		   }
-		});
->>>>>>> origin/develop
 		alertDialog.setIcon(android.R.drawable.ic_menu_help);
 		alertDialog.show();
 	}
