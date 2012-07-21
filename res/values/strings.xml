@@ -16,5 +16,7 @@
     <string name="menu_about">About</string>
     <string name="copyright">Random Number Generator\n\nCopyright (C) 2012:\n    Darksoft Foundation,\n    Joel Peláez Jorge</string>
     <string name="about_title">About...</string>
+    <string name="number_error_title">Number Error</string>
+    <string name="number_error_message">Intro a number.</string>
 
 </resources>
